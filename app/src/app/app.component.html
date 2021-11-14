@@ -10,39 +10,16 @@
     </section>
 
     <section class="notes" data-simplebar data-simplebar-auto-hide="false">
-        <div class="card">
-            <div class="card-category">
-                &nbsp;
-            </div>
-            <div class="card-title">
-                <h2>This is the title!</h2>
-            </div>
-            <div class="card-content">
-                This is the contecnt of the note and it can contain some text and stuff. 
-            </div>
-        </div>
         
-        <div class="card">
-            <div class="card-category">
+        <div *ngFor="let note of notes; let i = index" class="card">
+            <div class="card-category" [ngClass]="note.category">
                 &nbsp;
             </div>
             <div class="card-title">
-                <h2>This is the title!</h2>
+                <h2>{{note.title}}</h2>
             </div>
             <div class="card-content">
-                This is the contecnt of the note and it can contain some text and stuff. 
-            </div>
-        </div>
-        
-        <div class="card">
-            <div class="card-category">
-                &nbsp;
-            </div>
-            <div class="card-title">
-                <h2>This is the title!</h2>
-            </div>
-            <div class="card-content">
-                This is the contecnt of the note and it can contain some text and stuff. 
+                {{note.desc}}
             </div>
         </div>
 
@@ -56,7 +33,7 @@
             <h2>Latest todos: </h2>
         </div>
         <ul class="todos-entries">
-            <li *ngFor="let todo of todos; let i = index" [class.done] = "todo.status == 'done'" (click) = "(todo.status) == 'done' ? todo.status = 'open' : todo.status = 'done'" class="todos-entry"><span class="todos-status"><fa-icon [icon]="faCheck"></fa-icon></span><span class="todos-desc">{{todo.desc}}</span></li>
+            <li *ngFor="let todo of todos; let i = index" [class.done] = "todo.status == 'done'" (click) = "(todo.status) == 'done' ? todo.status = 'open' : todo.status = 'done'" class="todos-entry"><span class="todos-status" [ngClass]="todo.category"><fa-icon [icon]="faCheck"></fa-icon></span><span class="todos-desc">{{todo.desc}}</span></li>
         </ul>
 
     </section>

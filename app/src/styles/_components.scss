@@ -56,7 +56,15 @@ main {
                     height: 7px;
                     margin-top: 28px;
                     background-color: $gray;
-                    
+
+                    &.blue { background-color: $blue; }
+                    &.red { background-color: $red; }
+                    &.yellow { background-color: $yellow; }
+                    &.green { background-color: $green; }
+                    &.orange { background-color: $orange; }
+                    &.turquoise { background-color: $turquoise; }
+                    &.pink { background-color: $pink; }
+                    &.purple { background-color: $purple; }                    
                 }
 
                 .card-title {
@@ -114,10 +122,19 @@ main {
                         height: 16px;
                         line-height: 16px;
                         border-radius: 8px;
-                        border: 0.5px solid $blue;
+                        border: 0.5px solid $gray;
                         font-size: 8px;
                         text-align: center;
                         color: $white;
+
+                        &.blue { border: 0.5px solid $blue; }
+                        &.red { border: 0.5px solid $red; }
+                        &.yellow { border: 0.5px solid $yellow; }
+                        &.green { border: 0.5px solid $green; }
+                        &.orange { border: 0.5px solid $orange; }
+                        &.turquoise { border: 0.5px solid $turquoise; }
+                        &.pink { border: 0.5px solid $pink; }
+                        &.purple { border: 0.5px solid $purple; }
                     }
 
                     .todos-desc {
@@ -127,7 +144,16 @@ main {
                     }
 
                     &.done .todos-status {
-                        background-color: $blue;
+                        background-color: $gray;
+
+                        &.blue { background-color: $blue; }
+                        &.red { background-color: $red; }
+                        &.yellow { background-color: $yellow; }
+                        &.green { background-color: $green; }
+                        &.orange { background-color: $orange; }
+                        &.turquoise { background-color: $turquoise; }
+                        &.pink { background-color: $pink; }
+                        &.purple { background-color: $purple; }
 
                     }
 

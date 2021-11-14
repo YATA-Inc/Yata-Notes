@@ -39,15 +39,16 @@ $line-height: 1.6;
  * Basic Colors
  * ========================================================================== */
 
-$blue: #646768;
-$blue-active: #0FA0CE;
+$blue: #0FA0CE;
 $red: #f00;
-$white: #F0F0F0;
+$white: #FFFFFF;
 $black: #000;
-$gray: #222222;
+$fog: #F0F0F0;
+$gray: #646768;
+$charcoal: #222222;
 
 /*
  * Mixing Colors
  * ========================================================================== */
-$text-color: $gray;
+$text-color: $charcoal;
 $inverted-text-color: $white;

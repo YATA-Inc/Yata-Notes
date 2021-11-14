@@ -9,7 +9,7 @@
         <h2>Let's get started!</h2>
     </section>
 
-    <section class="notes">
+    <section class="notes" data-simplebar data-simplebar-auto-hide="false">
         <div class="card">
             <div class="card-category">
                 &nbsp;
@@ -56,13 +56,9 @@
             <h2>Latest todos: </h2>
         </div>
         <ul class="todos-entries">
-            <li class="todos-entry"><span class="todos-status"><fa-icon [icon]="faCheck"></fa-icon></span><span class="todos-desc">Action to do</span></li>
-            <li class="todos-entry done"><span class="todos-status"><fa-icon [icon]="faCheck"></fa-icon></span><span class="todos-desc">Action to do</span></li>
-            <li class="todos-entry"><span class="todos-status"><fa-icon [icon]="faCheck"></fa-icon></span><span class="todos-desc">Action to do</span></li>
+            <li *ngFor="let todo of todos; let i = index" [class.done] = "todo.status == 'done'" (click) = "(todo.status) == 'done' ? todo.status = 'open' : todo.status = 'done'" class="todos-entry"><span class="todos-status"><fa-icon [icon]="faCheck"></fa-icon></span><span class="todos-desc">{{todo.desc}}</span></li>
         </ul>
 
     </section>
-
-
 
 </main>

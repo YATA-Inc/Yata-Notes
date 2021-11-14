@@ -8,7 +8,7 @@ main {
     width: 340px;
     margin: 0 auto;
 
-    background-color: #F0F0F0;
+    background-color: $fog;
 
     nav {
         height: 70px;
@@ -47,7 +47,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 margin-left: 28px;
-                background-color: #FFFFFF;
+                background-color: $white;
                 border-radius: 7px;
 
                 .card-category {
@@ -55,7 +55,7 @@ main {
                     width: 28px;
                     height: 7px;
                     margin-top: 28px;
-                    background-color: #646768;
+                    background-color: $gray;
                     
                 }
 
@@ -80,13 +80,13 @@ main {
         &.todos {
 
             .todos-top {
-                background-color: #FFFFFF;
+                background-color: $white;
                 border-radius: 14px 14px 0px 0px;
                 text-align: center;
 
                 span {
                     display: inline-block;
-                    background-color: #646768;
+                    background-color: $gray;
                     width: 42px;
                     height: 7px;
                     margin-top: 7px;
@@ -96,13 +96,13 @@ main {
 
             .todos-title {
                 padding: 0 28px 7px;
-                background-color: #FFFFFF;
+                background-color: $white;
 
             }
 
             .todos-entries {
                 padding: 0 28px;
-                background-color: #FFFFFF;
+                background-color: $white;
 
                 .todos-entry {
 
@@ -114,10 +114,10 @@ main {
                         height: 16px;
                         line-height: 16px;
                         border-radius: 8px;
-                        border: 0.5px solid $blue-active;
+                        border: 0.5px solid $blue;
                         font-size: 8px;
                         text-align: center;
-                        color: white;
+                        color: $white;
                     }
 
                     .todos-desc {
@@ -127,7 +127,13 @@ main {
                     }
 
                     &.done .todos-status {
-                        background-color: $blue-active;
+                        background-color: $blue;
+
+                    }
+
+                    &.done .todos-desc {
+                        text-decoration: line-through;
+                        color: $gray;
 
                     }
 

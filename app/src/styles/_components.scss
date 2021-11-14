@@ -1,0 +1,142 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Components
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+main {
+    width: 340px;
+    margin: 0 auto;
+
+    background-color: #F0F0F0;
+
+    nav {
+        height: 70px;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            width: 70px;
+            align-self: center;
+            text-align: center;
+
+            &.menu {
+                transform: rotate(0.5turn);
+            }
+        }
+
+
+    }
+
+    section {
+        margin-top: 28px;
+
+        &.hello {
+            margin: 28px;
+
+        }
+
+        &.notes {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                margin-left: 28px;
+                background-color: #FFFFFF;
+                border-radius: 7px;
+
+                .card-category {
+                    align-self: flex-end;
+                    width: 28px;
+                    height: 7px;
+                    margin-top: 28px;
+                    background-color: #646768;
+                    
+                }
+
+                .card-title {
+                    align-self: flex-start;
+                    width: 200px;
+                    margin: 14px;
+                    white-space: normal;
+                }
+
+                .card-content {
+                    align-self: flex-start;
+                    width: 200px;
+                    margin: 14px;
+                    white-space: normal;
+
+                }
+            }
+        }
+
+
+        &.todos {
+
+            .todos-top {
+                background-color: #FFFFFF;
+                border-radius: 14px 14px 0px 0px;
+                text-align: center;
+
+                span {
+                    display: inline-block;
+                    background-color: #646768;
+                    width: 42px;
+                    height: 7px;
+                    margin-top: 7px;
+                }
+
+            }
+
+            .todos-title {
+                padding: 0 28px 7px;
+                background-color: #FFFFFF;
+
+            }
+
+            .todos-entries {
+                padding: 0 28px;
+                background-color: #FFFFFF;
+
+                .todos-entry {
+
+                    .todos-status {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 12px;
+                        width: 16px;
+                        height: 16px;
+                        line-height: 16px;
+                        border-radius: 8px;
+                        border: 0.5px solid $blue-active;
+                        font-size: 8px;
+                        text-align: center;
+                        color: white;
+                    }
+
+                    .todos-desc {
+                        display: inline-block;
+                        vertical-align: middle;
+
+                    }
+
+                    &.done .todos-status {
+                        background-color: $blue-active;
+
+                    }
+
+                }
+
+            }
+            
+        }
+
+    }
+
+}

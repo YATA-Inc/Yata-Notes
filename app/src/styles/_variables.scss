@@ -1,0 +1,53 @@
+/**
+ * Variables
+ */
+
+
+/*
+ * Fonts
+ * ========================================================================== */
+
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+
+$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-title: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$body-font: $font-family;
+$body-font-weight: 400;
+
+$header-font: $font-family-title;
+
+$basic-font-size: 62.5%;
+$paragraph: 1.5em;
+
+// Golden ration for 16px font-size
+$line-height: 1.6;
+
+// For REM / EM
+//$basic-font-size: 62.5%;
+//$paragraph: 1.6rem;
+//$line-height: 2.4rem;
+
+
+
+/*
+ * Palette
+ * ========================================================================== */
+
+/*
+ * Basic Colors
+ * ========================================================================== */
+
+$blue: #646768;
+$blue-active: #0FA0CE;
+$red: #f00;
+$white: #F0F0F0;
+$black: #000;
+$gray: #222222;
+
+/*
+ * Mixing Colors
+ * ========================================================================== */
+$text-color: $gray;
+$inverted-text-color: $white;

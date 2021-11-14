@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faAlignRight, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faAlignRight, faSearch, faCheck } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +10,5 @@ export class AppComponent {
   title = 'app';
   faAlignRight = faAlignRight;
   faSearch = faSearch;
+  faCheck = faCheck;
 }

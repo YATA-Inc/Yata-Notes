@@ -11,11 +11,11 @@
 
     <section class="notes">
         <div class="card">
-            <div class="card-title">
-                Here we go for the title
-            </div>
             <div class="card-category">
                 &nbsp;
+            </div>
+            <div class="card-title">
+                <h2>This is the title!</h2>
             </div>
             <div class="card-content">
                 This is the contecnt of the note and it can contain some text and stuff. 
@@ -27,7 +27,7 @@
                 &nbsp;
             </div>
             <div class="card-title">
-                Here we go for the title
+                <h2>This is the title!</h2>
             </div>
             <div class="card-content">
                 This is the contecnt of the note and it can contain some text and stuff. 
@@ -35,16 +35,31 @@
         </div>
         
         <div class="card">
-            <div class="card-title">
-                Here we go for the title
-            </div>
             <div class="card-category">
                 &nbsp;
+            </div>
+            <div class="card-title">
+                <h2>This is the title!</h2>
             </div>
             <div class="card-content">
                 This is the contecnt of the note and it can contain some text and stuff. 
             </div>
         </div>
+
+    </section>
+
+    <section class="todos">
+        <div class="todos-top">
+            <span>&nbsp;</span>
+        </div>
+        <div class="todos-title">
+            <h2>Latest todos: </h2>
+        </div>
+        <ul class="todos-entries">
+            <li class="todos-entry"><span class="todos-status"><fa-icon [icon]="faCheck"></fa-icon></span><span class="todos-desc">Action to do</span></li>
+            <li class="todos-entry done"><span class="todos-status"><fa-icon [icon]="faCheck"></fa-icon></span><span class="todos-desc">Action to do</span></li>
+            <li class="todos-entry"><span class="todos-status"><fa-icon [icon]="faCheck"></fa-icon></span><span class="todos-desc">Action to do</span></li>
+        </ul>
 
     </section>
 

@@ -1,5 +1,28 @@
-/* Base Styles
+/* Sidebar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: yellow;
+    z-index: 100;
+    transform: translate(-100%);
+    transition: 0.5s ease;
+
+    &.open {
+        transform: translate(0%);
+
+    }
+
+    .sidebar-container {
+        
+    }
+
+}
+
+
+
 
 
 /* Components
@@ -16,9 +39,12 @@ main {
 
         display: flex;
         justify-content: space-between;
+        align-items: stretch;
 
         a {
             width: 70px;
+            height: 70px;
+            line-height: 70px;
             align-self: center;
             text-align: center;
 
@@ -30,8 +56,12 @@ main {
 
     }
 
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
     section {
-        margin-top: 28px;
 
         &.hello {
             margin: 28px;
@@ -42,6 +72,8 @@ main {
             display: flex;
             overflow-x: auto;
             white-space: nowrap;
+            margin-top: 28px;
+            padding-bottom: 14px;
 
             .card {
                 display: flex;
@@ -86,6 +118,7 @@ main {
 
 
         &.todos {
+            margin-top: 14px;
 
             .todos-top {
                 background-color: $white;

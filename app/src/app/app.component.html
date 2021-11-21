@@ -1,15 +1,24 @@
-<main>
-        <nav>
-            <a class="menu" href="#"><fa-icon [icon]="faAlignRight"></fa-icon></a>
-            <a class="search" href="#"><fa-icon [icon]="faSearch"></fa-icon></a>
-        </nav>
+<aside class="sidebar">
+    <div class="sidebar-content">
+        x
+        and a few thingss
+    </div>
+</aside>
 
-        <section class="hello">
-            <h1>Hi, Jakob</h1>
-            <h2>Let's get started!</h2>
-        </section>
+
+<main>
+    <nav>
+        <a class="menu" href="#"><fa-icon [icon]="faAlignRight"></fa-icon></a>
+        <a class="search" href="#"><fa-icon [icon]="faSearch"></fa-icon></a>
+    </nav>
+
+    <section class="hello">
+        <h1>Hi, Jakob</h1>
+        <h2>Let's get started!</h2>
+    </section>
 
     
+    <div class="content">
         <section class="notes">
             
             <div *ngFor="let note of notes; let i = index" class="card">
@@ -37,5 +46,5 @@
                 <li *ngFor="let todo of todos; let i = index" [class.done] = "todo.status == 'done'" (click) = "(todo.status) == 'done' ? todo.status = 'open' : todo.status = 'done'" class="todos-entry"><span class="todos-status" [ngClass]="todo.category"><fa-icon [icon]="faCheck"></fa-icon></span><span class="todos-desc">{{todo.desc}}</span></li>
             </ul>
         </section>
-
+    </div>
 </main>
